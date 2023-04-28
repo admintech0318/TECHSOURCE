@@ -1,0 +1,377 @@
+* {/*selector universal*/
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.container{/*contenedor general*/
+    width: 100%;
+    height: auto;
+    background: white;
+    align-items: center;
+    position: relative;  
+    }
+body{
+    width: 100%;
+}
+header{/*encabezado*/
+    width: auto;
+    min-height: 100px;
+   display: flex;
+   justify-content: space-between;
+   height: 100px;
+   padding: auto;
+  background: #2E4053;
+   padding: 10px;
+   align-items: center;
+   text-decoration: none;
+   color: white;
+   border-bottom: 1px solid #f9f9f9;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav{
+        padding-top: 10px;
+    }
+    .logo img{
+        padding-right: 10px;
+    }
+}
+
+header h2{/*modificamos el subtitulo dentro de la cabezera*/
+    color: white;
+}
+.logo{/*contenedor logo*/
+    display: flex;
+    align-items: center;
+}
+.logo img{/*tamaño img*/
+        height: 90px;
+        padding-right: 10px;
+}
+nav a{
+    font-weight: 500px;
+    padding-right: 10px;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    font-family: 'Courier', Times, serif;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.link:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color:cadetblue ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover:after{
+    width: 100%;
+    right: 0;
+
+}
+
+/*bienvenida*/
+.presentacion{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    background:  #2E4053 ;
+    
+}
+.presentacion div{
+    text-align: center;
+    color: #FFF;
+}
+.cont2 h2{
+   padding-top: 100px;
+   padding-bottom: 15px;
+   font-size: 30px;
+}
+.cont2 p{
+    font-size: 20px;
+}
+.cont2{
+    width: 90%;
+    margin: auto;
+}
+/*centro de la pagina*/
+.Principal{
+width: 100%;
+
+}
+.articulo{
+    width: 1000px;
+    margin: auto;
+}
+.articulo p{
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+
+.servidetallado{
+    width: 70%;
+    margin: auto;
+}
+.servipart{
+    background: rgb(241, 241, 241);
+}
+.Principal h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.articulo p{
+    font-size: 18px;
+}
+.articulo li{
+  font-size: 18px;
+}
+.vision{
+    width: 700px;
+    height: 200px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+   /* background: #EAFAF1*/ ;
+
+}
+/*.vision h3{
+    text-align: center;
+}*/
+.objetivo{
+    padding-top:60px;
+    padding-bottom: 20px;
+    background: rgb(241, 241, 241);
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+.objetivo figure{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0px, 15px 25px rgba(0,0,0,0.50);
+    margin: auto;
+}
+.objetivo figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out ;
+}
+.objetivo figure .cont3{
+    position: absolute;
+    top: 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 2, 0.6);
+    text-align: center;
+    
+    
+}
+.objetivo figure .cont3 h3 {
+    top: 0;
+    padding-top: 40px;
+    color: #FFF;
+}
+.objetivo figure .cont3 p{
+    color: #fff;
+}
+/* Apartado servicios*/
+.apartadoservicios{
+    padding: 15px;
+    padding-bottom: 30px;
+    background: rgb(231, 231, 231);
+
+}
+
+
+.idservicios{
+    margin-bottom: 60px;
+}
+
+#contenedorServicios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#contenedorServicios figure{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0px, 15px 25px rgba(0,0,0,0.50);
+    margin: auto;
+}
+#contenedorServicios figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out ;
+}
+#contenedorServicios figure .cont1{
+    position: absolute;
+    top: 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.4);
+    text-align: center;
+    
+    
+}
+#contenedorServicios figure .cont1 h3 {
+    top: 0;
+    padding-top: 40px;
+    color: #FFF;
+}
+#contenedorServicios figure .cont1 p{
+    color: #fff;
+}
+
+#contenedorServicios figure:hover > .cont1{
+    font-size: 17px;
+}
+@media (max-width: 1000px){
+    #servicios{
+        flex-direction: column;
+    }
+}
+.separador{
+    width: 100%;
+    height: 70px;
+}
+/*.contac {
+  
+  padding: 20px;
+  color: black;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+flex-direction: column;
+}
+.contac p{
+    font-size: 17px;
+    font-weight: bold;
+}
+.contac button{
+    margin-top: 20px;
+}*/
+/*pie de pagina*/
+.servipart{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+    
+}
+.servipart li{
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+footer{
+    background: #081320;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    
+    list-style: none;
+    text-decoration: none;
+}
+
+.logofooter img{
+    width: 200px;
+    padding-bottom: 10px;
+    
+}
+.logofooter{
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.contenedor_pie{
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 20px;
+}
+.apartado{
+    width: auto;
+    padding: 0 25px;
+    text-align: justify;
+    margin: auto;
+    font-size: 16px;
+   
+    
+}
+.apartado h4{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(27, 27, 129);
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 0;  
+}
+.apartado li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.icon{
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 12px;
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+@media (max-width:700px){
+    .contenedor_pie{
+        flex-direction: column;
+        
+    }
+    footer{
+        height: auto;
+    }
+
+    .apartado{
+        text-align: center;
+        font-size: 16;
+        padding: 10px;
+        
+    }
+    .apartado h4{
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

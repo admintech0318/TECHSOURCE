@@ -1,0 +1,292 @@
+* {/*selector universal*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    text-align: center; 
+    
+    
+}
+ article{
+    display: block;
+}
+
+.containerGeneral{/*contenedor general*/
+width: 100%;
+height: auto;
+background: white;
+align-items: center;
+position: relative;  
+}
+
+/*SECCION ENCABEZADO*/
+#textura{
+   
+   background: rgba(128, 128, 128, 20%);
+
+}
+header{/*encabezado*/
+    width: auto;
+    min-height: 100px;
+   display: flex;
+   justify-content: space-between;
+   height: 100px;
+   padding: auto;
+  background: #2E4053;
+   padding: 10px;
+   align-items: center;
+   text-decoration: none;
+   color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav{
+        padding-top: 10px;
+    }
+    .logo img{
+        padding-right: 10px;
+    }
+}
+
+header h2{/*modificamos el subtitulo dentro de la cabezera*/
+    color: white;
+}
+.logo{/*contenedor logo*/
+    display: flex;
+    align-items: center;
+}
+.logo img{/*tamaño img*/
+        height: 110px;
+        padding-right: 10px;
+}
+nav a{
+    font-weight: 500px;
+    padding-right: 10px;
+    color: white;
+}
+
+.list_item{
+    display: inline-block;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    font-family: 'Courier', Times, serif;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.link:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color:cadetblue ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover:after{
+    width: 100%;
+    right: 0;
+
+}
+
+/*APARTADO VIDEO BIENVENIDA*/
+video{
+    display:flex;
+    margin: auto;
+  }
+  #bienvenida{
+    padding: 20px 0;
+  }
+  .mensaje{
+    margin: 80px 0;
+  }
+  .mensaje{
+    justify-content: space-between;
+      margin: auto;
+      height: auto;
+      display: flex;
+      float: left;
+      width: 500px;
+     padding-left: 40px;
+  }
+  .mensaje h2  {
+      font-size: 58px;
+      color: #1C2833;
+      font-weight: 780;
+      margin-top: 60px;    
+   
+  }
+  #bienvenida{
+    background: rgba(128, 128, 128, 15%);
+  }
+/*SECCION PRINCIPAL CUERPO DE LA PAGINA*/
+section {
+    padding-top:40px;
+    font-family: sans-serif;
+    
+}
+.idservicios{
+    margin-bottom: 60px;
+}
+
+#contenedorServicios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#contenedorServicios figure{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0px, 15px 25px rgba(0,0,0,0.50);
+    margin: auto;
+}
+#contenedorServicios figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out ;
+}
+#contenedorServicios figure .cont1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.6);
+    text-align: center;
+    
+    
+}
+#contenedorServicios figure .cont1 h3 {
+    padding-top: 65px;
+    
+    color: #FFF;
+}
+#contenedorServicios figure .cont1 p{
+    color: #fff;
+}
+
+#contenedorServicios figure:hover > .cont1{
+    font-size: 17px;
+}
+@media (max-width: 1000px){
+    #servicios{
+        flex-direction: column;
+    }
+}
+/*seccion conocenos*/
+.conocenos{
+    margin-top: 100px;
+    width: auto;
+    height: 200px;
+    display: block;
+    
+    
+}
+.conocenos h2{
+    padding-bottom: 10px;
+}
+/*PIE DE PAGINA*/
+
+footer{
+    background: #081320;
+    width: 100%;
+    height: auto;
+    
+}
+
+.logofooter img{
+    width: 200px;
+    padding-bottom: 10px;
+    
+}
+.logofooter{
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.contenedor_pie{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.apartado{
+    width: auto;
+    padding: 0 25px;
+    text-align: justify;
+    margin: auto;
+    font-size: 16px;
+
+    
+}
+.apartado h4{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(27, 27, 129);
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 0;
+    
+}
+.icon{
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 12px;
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+@media (max-width:700px){
+    .contenedor_pie{
+        flex-direction: column;
+        
+    }
+    footer{
+        height: auto;
+    }
+
+    .apartado{
+        text-align: center;
+        font-size: 16;
+        padding: 10px;
+        
+    }
+    .apartado h4{
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+
+
